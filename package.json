@@ -4,8 +4,11 @@
     "type": "module",
     "description": "[![Actions Status](https://github.com/hiff0/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/hiff0/frontend-project-lvl1/actions)",
     "bin": {
-        "brain-games": "bin/brain-games.js",
-        "brain-even": "bin/brain-even.js"
+        "brain-games": "bin/games/brain-games.js",
+        "brain-even": "bin/games/brain-even.js",
+        "brain-calc": "bin/games/brain-calc.js",
+        "brain-gcd": "bin/games/brain-gcd.js",
+        "brain-progression": "bin/games/brain-progression"
     },
     "main": "index.js",
     "scripts": {
