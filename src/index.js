@@ -36,23 +36,6 @@ const getGCD = (number1, number2) => {
     return number1;
 }
 
-//Арифмитическая прогрессия из случайных чисел
-const getProgression = () => {
-
-    let number = getRandomNumber(1, 10);
-    let progression = [];
-    let randIndex = getRandomNumber(0, 10);
-    const step = getRandomNumber(1, 11);
-
-    for (let i = 0; i <= 9; i += 1) {
-        progression.push(number);
-        number += step;
-    }
-    const a = progression[randIndex];
-    progression[randIndex] = '..';
-    return progression.join(' ');
-}
-
 //Запрос имя пользователя
 export const Name = () => {
 
@@ -97,7 +80,7 @@ export const EvenNumbers = () => {
     }
 }
 
-//Логика игры brain-calc
+//Логика игры "Калькулятор" (brain-calc)
 export const CalcGame = () => {
 
     console.log('Welcome to the Brain Games!');
@@ -133,7 +116,7 @@ export const CalcGame = () => {
     }
 }
 
-//Логика игры с НОД
+//Логика игр с нахождение НОД (brain-gcd)
 export const GCD = () => {
 
     console.log('Welcome to the Brain Games!');
@@ -194,4 +177,9 @@ export const Progression = () => {
         if (i === 3)
             console.log(`Congratulations, ${name}`);
     }
+}
+
+//Игра: простое числи или нет
+export const PrimeNumber = () => {
+
 }
