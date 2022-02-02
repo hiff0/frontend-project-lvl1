@@ -1,16 +1,21 @@
-name: Node CI
-on: 
-  - push
-  - pull_request
+name: Lint 
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
-  strategy:
-    matrix:
-      node-version: [16.x]
-  steps:
-      uses: actions/checkout@v2
-    - name: Use Node.js
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lint
       uses: actions/setup-node@v1
-    - name: run linter
-      run: make lint
+      with:
+        node-version: 16.x
+    - run: npm install
+    - run: make lintt
