@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomNumber } from '../index.js';
+import getRandomNumber from '../index.js';
 
 // Проверка, простое ли число или нет
 const primeNumb = (number) => {
@@ -15,7 +15,7 @@ const primeNumb = (number) => {
 };
 
 // Игра: простое числи или нет
-export const PrimeNumber = () => {
+const PrimeNumber = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${name}`);
@@ -40,3 +40,4 @@ export const PrimeNumber = () => {
     if (i === 3) { console.log(`Congratulations, ${name}`); }
   }
 };
+export default PrimeNumber;

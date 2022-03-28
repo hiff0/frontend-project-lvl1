@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomNumber } from '../index.js';
+import getRandomNumber from '../index.js';
 
 const randExpression = () => {
   const operators = ['+', '-', '*'];
@@ -11,7 +11,7 @@ const randExpression = () => {
 };
 
 // Логика игры "Калькулятор" (brain-calc)
-export const CalcGame = () => {
+const CalcGame = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${name}`);
@@ -27,12 +27,12 @@ export const CalcGame = () => {
 
     console.log(`Question: ${rand1} ${randOper} ${rand2}`);
     const answer = readlineSync.question('Your answer: ');
-
-    if (answer === `${result}`) // Если ответ равен рузультату выражения
-    { console.log('Correct!'); } else { // Во всех остальных случаях выводим проигрыш и выходим из цикла
+    // Если ответ равен рузультату выражения
+    if (answer === `${result}`) { console.log('Correct!'); } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}`);
       break;
     }
     if (i === 3) { console.log(`Congratulations, ${name}`); }
   }
 };
+export default CalcGame;

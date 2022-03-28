@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomNumber } from '../index.js';
+import getRandomNumber from '../index.js';
 
-export const EvenNumbers = () => {
+const EvenNumbers = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${name}`);
@@ -17,7 +17,7 @@ export const EvenNumbers = () => {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${name}`);
         break;
       }
-    } else if (randNumber % 2 != 0) { // Если число не четное
+    } else if (randNumber % 2 !== 0) { // Если число не четное
       if (answer === 'no') { console.log('Correct!'); } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}`);
         break;
@@ -26,3 +26,4 @@ export const EvenNumbers = () => {
     if (i === 3) { console.log(`Congratulations: ${name}!`); }
   }
 };
+export default EvenNumbers;

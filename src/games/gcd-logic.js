@@ -1,15 +1,19 @@
 import readlineSync from 'readline-sync';
-import { getRandomNumber } from '../index.js';
+import getRandomNumber from '../index.js';
 
 // Нахождение НОД двух чисел
 const getGCD = (number1, number2) => {
   // Алгоритм Евклида
-  if (number1 === number2) { gcd = number1; }
-  while (number1 != number2) {
-    if (number1 > number2) { number1 -= number2; } else { number2 -= number1; }
+  let n1 = number1;
+  let n2 = number2;
+  if (n1 === n2) {
+    return n1;
+  }
+  while (n1 !== n2) {
+    if (n1 > n2) { n1 -= n2; } else { n2 -= n1; }
   }
 
-  return number1;
+  return n1;
 };
 
 // Логика игр с нахождение НОД (brain-gcd)
@@ -32,3 +36,4 @@ export const GCD = () => {
     if (i === 3) { console.log(`Congratulations, ${name}`); }
   }
 };
+export default GCD;

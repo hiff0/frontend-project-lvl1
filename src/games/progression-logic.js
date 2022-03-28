@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandomNumber } from '../index.js';
+import getRandomNumber from '../index.js';
 
-export const Progression = () => {
+const Progression = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May i have yout name? ');
   console.log(`Hello, ${name}`);
@@ -13,7 +13,7 @@ export const Progression = () => {
     const randIndex = getRandomNumber(0, 10);
     const step = getRandomNumber(1, 11);
 
-    for (let i = 0; i <= 9; i += 1) {
+    for (let j = 0; j <= 9; j += 1) {
       progression.push(number);
       number += step;
     }
@@ -31,3 +31,4 @@ export const Progression = () => {
     if (i === 3) { console.log(`Congratulations, ${name}`); }
   }
 };
+export default Progression;
