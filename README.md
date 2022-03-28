@@ -12,24 +12,24 @@ ___
 
 ### brain-even ( Игра: "Проверка на чётность" )
 ```
-$ make brain-even
+$ brain-even
 ```
 ### brain-calc ( Игра "Калькулятор" )
 
 ```
-$ make brain-calc 
+$ brain-calc 
 ```
 ### brain-gcd ( Игра "НОД" )
 ```
-$ make brain-gcd
+$ brain-gcd
 ```
 ### brain-progression ( Игра "Арифметическая прогрессия" )
 ```
-$ make brain-progression
+$ brain-progression
 ```
 ### brain-prime ( Игра "Простое ли число?" )
 ```
-$ make brain-prime
+$ brain-prime
 ```
 
 # Примеры игр
