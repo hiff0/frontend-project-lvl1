@@ -28,12 +28,12 @@ const PrimeNumber = () => {
 
     if (primeNumb(number)) {
       if (answer === 'yes') { console.log('Correct!'); } else {
-        console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}`);
+        console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
         break;
       }
     } else if (!primeNumb(number)) {
       if (answer === 'no') { console.log('Correct!'); } else {
-        console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}`);
+        console.log(`${answer} is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
         break;
       }
     }

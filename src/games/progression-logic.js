@@ -25,7 +25,7 @@ const Progression = () => {
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === `${randNumber}`) { console.log('Correct!'); } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${randNumber}.\nLet's try again, ${name}`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${randNumber}.\nLet's try again, ${name}!`);
       break;
     }
     if (i === 3) { console.log(`Congratulations, ${name}`); }

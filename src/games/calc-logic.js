@@ -29,7 +29,7 @@ const CalcGame = () => {
     const answer = readlineSync.question('Your answer: ');
     // Если ответ равен рузультату выражения
     if (answer === `${result}`) { console.log('Correct!'); } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
       break;
     }
     if (i === 3) { console.log(`Congratulations, ${name}`); }

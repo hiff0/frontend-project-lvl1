@@ -14,12 +14,12 @@ const EvenNumbers = () => {
 
     if (randNumber % 2 === 0) { // Если число четное
       if (answer === 'yes') { console.log('Correct!'); } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${name}!`);
         break;
       }
     } else if (randNumber % 2 !== 0) { // Если число не четное
       if (answer === 'no') { console.log('Correct!'); } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
         break;
       }
     }

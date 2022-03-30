@@ -30,7 +30,7 @@ export const GCD = () => {
     console.log(`Question: ${randNumber1} ${randNumber2}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === `${getGCD(randNumber1, randNumber2)}`) { console.log('Correct!'); } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${getGCD(randNumber1, randNumber2)}.\nLet's try again, ${name}`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${getGCD(randNumber1, randNumber2)}.\nLet's try again, ${name}!`);
       break;
     }
     if (i === 3) { console.log(`Congratulations, ${name}`); }
