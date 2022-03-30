@@ -19,7 +19,7 @@ const getGCD = (number1, number2) => {
 // Логика игр с нахождение НОД (brain-gcd)
 export const GCD = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May i have your name? ');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log('Find the greatest common divisor of given numbers.');
 

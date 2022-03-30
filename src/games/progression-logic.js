@@ -3,7 +3,7 @@ import getRandomNumber from '../index.js';
 
 const Progression = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May i have yout name? ');
+  const name = readlineSync.question('May I have yout name? ');
   console.log(`Hello, ${name}`);
   console.log('What number is missing in the progression?');
 
