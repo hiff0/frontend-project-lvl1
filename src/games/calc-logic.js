@@ -32,7 +32,7 @@ const CalcGame = () => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
       break;
     }
-    if (i === 3) { console.log(`Congratulations, ${name}`); }
+    if (i === 3) { console.log(`Congratulations, ${name}!`); }
   }
 };
 export default CalcGame;

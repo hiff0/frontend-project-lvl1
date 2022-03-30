@@ -28,7 +28,7 @@ const Progression = () => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${randNumber}.\nLet's try again, ${name}!`);
       break;
     }
-    if (i === 3) { console.log(`Congratulations, ${name}`); }
+    if (i === 3) { console.log(`Congratulations, ${name}!`); }
   }
 };
 export default Progression;

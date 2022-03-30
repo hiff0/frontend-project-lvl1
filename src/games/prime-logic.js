@@ -37,7 +37,7 @@ const PrimeNumber = () => {
         break;
       }
     }
-    if (i === 3) { console.log(`Congratulations, ${name}`); }
+    if (i === 3) { console.log(`Congratulations, ${name}!`); }
   }
 };
 export default PrimeNumber;
